@@ -2,8 +2,6 @@ module "ouka" {
   source = "./ouka"
 
   domain = "${var.domain}"
-  region = "${var.region}"
-  project = "${var.project}"
 }
 
 module "edge-ouka" {
@@ -12,8 +10,6 @@ module "edge-ouka" {
   prefix = "edge-"
 
   domain = "edge.${var.domain}"
-  region = "${var.region}"
-  project = "${var.project}"
 }
 
 resource "google_dns_record_set" "edge-ouka" {

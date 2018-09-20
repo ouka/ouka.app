@@ -5,5 +5,5 @@ terraform {
 }
 
 resource "google_storage_bucket" "backend" {
-  name     = "ouka-app-tfstate"
+  name  = "ouka-app-tfstate"
 }

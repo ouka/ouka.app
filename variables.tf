@@ -8,7 +8,3 @@ variable "region" {
 variable "domain" {
   default = "ouka.app."
 }
-
-variable "backend-bucket" {
-  default = "ouka-app-tfstate"
-}

@@ -1,10 +1,4 @@
-variable "project" {
-  default = "ouka-app"
-}
-variable "region" {
-  default = "asia-northeast1"
-}
+variable "project" {}
+variable "region" {}
 
-variable "domain" {
-  default = "ouka.app."
-}
+variable "domain" {}

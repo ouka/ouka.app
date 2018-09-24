@@ -10,6 +10,7 @@ module "edge-ouka" {
   prefix = "edge-"
 
   domain = "edge.${var.domain}"
+  hosting = ["${var.edge-hosting}"]
 }
 
 resource "google_dns_record_set" "edge-ouka" {

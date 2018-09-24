@@ -5,11 +5,11 @@ module "ouka" {
 }
 
 module "edge-ouka" {
-  source = "./ouka"
+  source  = "./ouka"
 
-  prefix = "edge-"
+  prefix  = "edge-"
 
-  domain = "edge.${var.domain}"
+  domain  = "edge.${var.domain}"
   hosting = ["${var.edge-hosting}"]
 }
 
